@@ -97,12 +97,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Voices\ic_english.png" />
-    <Resource Include="Voices\ic_russian.png" />
+    <Resource Include="Images\ic_english.png" />
+    <Resource Include="Images\ic_russian.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Elements\" />
-    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Voices\Russian\Hello.mp3" />
+    <Content Include="Voices\Russian\How are you.mp3" />
+    <Content Include="Voices\Russian\My name Aleksander.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

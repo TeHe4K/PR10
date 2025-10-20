@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pr10.Classes
 {
-    internal class Phrase
+    public class Phrase
     {
         public string _Phrase {  get; set; }
         public string Src {  get; set; }

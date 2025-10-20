@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +21,12 @@ namespace Pr10
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MediaPlayer MediaPlayer = new MediaPlayer();
+        private Classes.Russian Russian = new Classes.Russian("Александр", @"C:\Users\student-a502\Desktop\Pr10\Images\ic_russian.png");
         public MainWindow()
         {
             InitializeComponent();
+            Parent.Children.Add(new Elements.Item(Russian));
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Pr10.Elements
         {
             InitializeComponent();
             this.Human = Data as Classes.Human;
-            img.Source = new BitmapImage(new Uri(this.Human.Img));
+            img.Source = new BitmapImage(new Uri(this.Human.Img,UriKind.Relative));
             Name.Content = Data.GetType().Name;
         }
         private void Speak(object sender, MouseButtonEventArgs e)
